@@ -1,0 +1,123 @@
+﻿.containerb {
+    position: relative;
+    margin-top: 50px;
+    width: 180px;
+    height: 300px;
+    margin-right: 5%;
+}
+
+.overlayb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 180px;
+    height: 300px;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+}
+
+.containerb:hover .overlayb {
+    display: block;
+    background: rgba(0, 0, 0, .3);
+}
+
+.imgb {
+    position: absolute;
+    width: 180px;
+    height: 300px;
+    left: 0;
+}
+
+.titleb {
+    position: absolute;
+    width: 180px;
+    left: 0;
+    top: 120px;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    z-index: 1;
+    transition: top .5s ease;
+}
+
+.containerb:hover .titleb {
+    top: 90px;
+}
+
+.buttonb {
+    position: absolute;
+    width: 180px;
+    left: 0;
+    top: 230px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+}
+
+    .buttonb a {
+        width: 200px;
+        padding: 12px 48px;
+        text-align: center;
+        color: white;
+        border: solid 2px white;
+        z-index: 1;
+    }
+
+.containerb:hover .buttonb {
+    opacity: 1;
+}
+
+
+div.foo {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.letter {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 8em;
+    margin: 0.2em;
+    position: relative;
+    color: #343a40;
+    transform-style: preserve-3d;
+    perspective: 400;
+    z-index: 1;
+}
+
+    .letter:before, .letter:after {
+        position: absolute;
+        content: attr(data-letter);
+        transform-origin: top left;
+        top: 0;
+        left: 0;
+    }
+
+    .letter, .letter:before, .letter:after {
+        transition: all 0.3s ease-in-out;
+    }
+
+        .letter:before {
+            color: #335384;
+            text-shadow: -1px 0px 1px rgba(255,255,255,.8), 1px 0px 1px rgba(0,0,0,.8);
+            z-index: 3;
+            transform: rotateX(0deg) rotateY(-15deg) rotateZ(0deg);
+        }
+
+        .letter:after {
+            color: rgba(0,0,0,.11);
+            z-index: 2;
+            transform: scale(1.08,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,1deg);
+        }
+
+        .letter:hover:before {
+            color: #335384;
+            transform: rotateX(0deg) rotateY(-40deg) rotateZ(0deg);
+        }
+
+        .letter:hover:after {
+            transform: scale(1.08,1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg,22deg);
+        }
