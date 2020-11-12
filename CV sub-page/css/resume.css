@@ -31,7 +31,7 @@ p.lead {
   height: 3.5rem;
   width: 3.5rem;
   background-color: #495057;
-  color: #fff !important;
+  color: #eff0f2 !important;
   border-radius: 100%;
   text-align: center;
   font-size: 1.5rem;
@@ -44,7 +44,7 @@ p.lead {
 }
 
 .social-icons a:hover {
-  background-color: #BD5D38;
+  background-color: #335384;
 }
 
 .dev-icons {
@@ -52,7 +52,7 @@ p.lead {
 }
 
 .dev-icons .list-inline-item i:hover {
-  color: #BD5D38;
+  color: #335384;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -132,15 +132,15 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #BD5D38 !important;
+  background-color: #335384;
 }
 
 .text-primary {
-  color: #BD5D38 !important;
+  color: #335384 !important;
 }
 
 a {
-  color: #BD5D38;
+  color: #335384;
 }
 
 a:hover, a:focus, a:active {
@@ -179,4 +179,74 @@ text-decoration:underline;
 body{
 
 overflow-x: hidden;
+}
+.containerb {
+    position: relative;
+    margin-top: 50px;
+    width: 500px;
+    height: 300px;
+    float: right;
+}
+
+.overlayb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+    transition: background 0.5s ease;
+}
+
+.containerb:hover .overlayb {
+    display: block;
+    background: rgba(0, 0, 0, .3);
+}
+
+img {
+    position: absolute;
+    width: 500px;
+    height: 300px;
+    left: 0;
+}
+
+.titleb {
+    position: absolute;
+    width: 500px;
+    left: 0;
+    top: 120px;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: white;
+    z-index: 1;
+    transition: top .5s ease;
+}
+
+.containerb:hover .titleb {
+    top: 90px;
+}
+
+.buttonb {
+    position: absolute;
+    width: 500px;
+    left: 0;
+    top: 180px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity .35s ease;
+}
+
+    .buttonb a {
+        width: 200px;
+        padding: 12px 48px;
+        text-align: center;
+        color: white;
+        border: solid 2px white;
+        z-index: 1;
+    }
+
+.containerb:hover .buttonb {
+    opacity: 1;
 }

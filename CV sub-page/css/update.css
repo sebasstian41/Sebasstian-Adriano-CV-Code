@@ -1,50 +1,4 @@
-﻿#awards {
-    font-size: 13pt;
-    line-height: 28px;
-}
-a {
-    color: #343a40;
-    text-decoration: none;
-}
-
-#cap {
-    text-align: left;
-    color: #02082e;
-    font-size: 12pt;
-    
-}
-
-
-#skillsextra{
-
-
-    position: relative;
-    font-size: 13pt;
-    line-height: 28px;
-    
-}
-#skills2 {
-    
-    
-    position: relative;
-    padding-bottom: 3rem !important;
-    padding-top: 3rem !important;
-    left: 29px;
-}
-#mb-53{
-    position: relative;
-    left: 45px;
-    line-height: 40px;
-    top: 30px;
-    
-}
-#sportsh3 {
-    font-size: 2.5rem;
-    text-decoration: underline;
-    line-height: 100px;
-    
-}
-.containerb {
+﻿.containerb {
     position: relative;
     margin-top: 50px;
     width: 180px;
@@ -117,7 +71,7 @@ a {
 
 
 div.foo {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
 }
@@ -125,7 +79,7 @@ div.foo {
 .letter {
     display: inline-block;
     font-weight: 900;
-    font-size: 7em;
+    font-size: 8em;
     margin: 0.2em;
     position: relative;
     color: #343a40;
@@ -167,12 +121,3 @@ div.foo {
         .letter:hover:after {
             transform: scale(1.08,1) rotateX(0deg) rotateY(40deg) rotateZ(0deg) skew(0deg,22deg);
         }
-@media screen and (max-width: 1340px) {
-    .foo {
-        display: none;
-        visibility: hidden;
-        
-    }
-}
-
-
